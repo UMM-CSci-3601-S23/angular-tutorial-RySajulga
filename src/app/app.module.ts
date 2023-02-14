@@ -12,7 +12,7 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component'
 
-@@NgModule({
+@NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,

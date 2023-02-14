@@ -11,12 +11,12 @@ import { CartService } from '../cart.service';
 
 export class ShippingComponent implements OnInit {
   items: any;
+  constructor(private cartService: CartService) { }
+
 
   shippingCosts!: Observable<{ type: string, price: number }[]>;
 
   ngOnInit(): void {
     this.shippingCosts =  this.cartService.getShippingPrices();
   }
-  constructor(private cartService: CartService) { }
-
 }
